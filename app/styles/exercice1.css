@@ -1,0 +1,35 @@
+.blocks {
+  transform-origin : top left;
+  transform: translate(100px, -25px) rotate(30deg);
+}
+#one,#two,#three,#four {
+  width: 80px;
+  height: 80px;
+  padding:10px;
+  background-color:#fa4;
+  border: 1px solid black;
+}
+
+#one{
+  position: fixed;
+  top: 100px;
+  left:200px;
+}
+#two{
+  transform:rotate(90deg);
+  position: fixed;
+  top: 200px;
+  left: 100px;
+}
+#three{
+  transform:rotate(180deg);
+  position: fixed;
+  top: 100px;
+  left:000px;
+}
+#four{
+  transform:rotate(-90deg);
+  position: fixed;
+  top: 000px;
+  left:100px;
+}
