@@ -62,28 +62,26 @@
               </div>
               <div class="form-group">
                 <label for="typeDuBien">Type du bien</label>
-                <input list="types" class="form-control" id="typeDuBien">
-                <datalist id="types">
-                  <option value="Appartement">
-                  <option value="Maison">
-                  <option value="Terrain">
-                  <option value="Immeuble">
-                  <option value="Local / Bureau">
-                  <option value="Stationnement">
-                </datalist>
+                <select class="form-control">
+                  <option value="Appartement">Appartement</option>
+                  <option value="Maison">Maison</option>
+                  <option value="Terrain">Terrain</option>
+                  <option value="Immeuble">Immeuble</option>
+                  <option value="Local / Bureau">Local / Bureau</option>
+                  <option value="Stationnement">Stationnement</option>
+                </select>
               </div>
               <div class="form-group">
                 <label for="classeEnergetique">Classe Energétique</label>
-                <input list="classes" class="form-control" id="classeEnergetique">
-                <datalist id="classes">
-                  <option value="Classe A : < 50">
-                  <option value="Classe B : 51 à 90">
-                  <option value="Classe C : 91 à 150">
-                  <option value="Classe D : 151 à 230">
-                  <option value="Classe E : 231 à 330">
-                  <option value="Classe F : 331 à 450">
-                  <option value="Classe G : > 450">
-                </datalist>
+                <select class="form-control">
+                  <option value="Classe A : < 50" >Classe A : < 50</option>
+                  <option value="Classe B : 51 à 90">Classe B : 51 à 90</option>
+                  <option value="Classe C : 91 à 150">Classe C : 91 à 150</option>
+                  <option value="Classe D : 151 à 230">Classe D : 151 à 230</option>
+                  <option value="Classe E : 231 à 330">Classe E : 231 à 330</option>
+                  <option value="Classe F : 331 à 450">Classe F : 331 à 450</option>
+                  <option value="Classe G : > 450">Classe G : > 450</option>
+                </select>
               </div>
               <div class="form-group">
                 <label>Caractéristiques</label>
@@ -140,6 +138,16 @@
                 <label for="corpsAnnonce">Corps de l'annonce</label>
                 <textarea class="form-control" rows="5"></textarea>
               </div>
+              <div class="form-group">
+                <label for="images">Images de l'annonce</label>
+                <div id="holder">
+                  <div class="panel-body">
+                    <div id="output">
+                      <p id="tmp">Déposez vos images ici.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <button type="submit" class="btn btn-default">Valider</button>
             </form>
           </div>
@@ -175,6 +183,7 @@
       </div>
     </div>
   </footer>
+  <script src="scripts\modules\exercice3.js"></script>
   <script src="bower_components\jquery\jquery.min.js"></script>
   <script src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
 </body>

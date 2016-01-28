@@ -4,3 +4,18 @@
   margin-top : 30px;
   padding-top : 30px;
 }
+.taille {
+  height: 100px;
+  margin: 5px
+}
+#holder {
+  border: 2px dashed grey;
+  border-radius: 4px;
+}
+#holder.hover {
+  border-color: black;
+}
+#tmp {
+  color : grey;
+  font-style: italic;
+}
